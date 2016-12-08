@@ -5,30 +5,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Catalog</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-   <header class="header">
-     <a href="index.html" class="header__logo">
-      <img src="logo.jpg" alt="Логотип" class="header__img">
-      <span class="header__text"><b>Спецтех</b>24</span>
-    </a>
-  <nav class="header__nav">
-    <ul>
-      <li><a href="index.html">О компании</a></li>
-      <li><a href="catalog.html">Каталог</a></li>
-      <li><a href="portfolio.html">Портфолио</a></li>
-      <li><a href="contacts.html">Контакты</a></li>
-      <li><a href="index.html" class="header__btn-call">Заказать звонок</a></li>
-    </ul>
-  </nav>
+  <header class="header">
+      <div class="container">
+          <a href="#" class="header__logo">
+              <img src="img/truck_icon.png" alt="logotype" class="header__img">
+              <span class="header__text"><b>Спецтех</b>24</span>
+          </a>
+          <nav class="header__nav">
+              <ul>
+                  <li class="header__li"><a href="#">О компании</a></li>
+                  <li class="header__li"><a href="#">Каталог</a></li>
+                  <li class="header__li"><a href="#">Портфолио</a></li>
+                  <li class="header__li"><a href="#">Контакты</a></li>
+              </ul>
+          </nav>
+          <div class="header__btn"><a href="#" class="header__btn-call">Заказать звонок</a></div>
+      </div>
   </header>
   <main>
     <div class="rent-technic">
-      <h2 class="rent-technic__subtitle">Техника: Экскаваторы в аренду</h2>
-      <p class="rent-technic__text">Спецтех это безотказная техника </p>
-      <a href="" class="rent-techic__btn-order">Мне нужна консультация</a>
-      <p class="rent-technic__order-text">Оставьте заявку и уже сегодня мы вам перезвоним</p>
+      <div class="container">
+        <div class="rent-technic__left">
+          <h2 class="rent-technic__subtitle">Техника: Экскаваторы в аренду</h2>
+          <p class="rent-technic__text">Спецтех это безотказная техника </p>
+        </div>
+        <div class="rent-technic__right">
+          <a href="" class="rent-techic__btn-order">Мне нужна консультация</a>
+          <p class="rent-technic__order-text">Оставьте заявку и уже сегодня мы вам перезвоним</p>
+        </div>
+      </div>
     </div>
 
 <section class="catalog">

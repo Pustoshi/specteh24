@@ -5,58 +5,78 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Contacts</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="header">
-    <a href="index.html" class="header__logo">
-     <img src="logo.jpg" alt="Логотип" class="header__img">
-     <span class="header__text"><b>Спецтех</b>24</span>
-   </a>
- <nav class="header__nav">
-   <ul>
-     <li><a href="index.html">О компании</a></li>
-     <li><a href="catalog.html">Каталог</a></li>
-     <li><a href="portfolio.html">Портфолио</a></li>
-     <li><a href="contacts.html">Контакты</a></li>
-     <li><a href="index.html" class="header__btn-call">Заказать звонок</a></li>
-   </ul>
- </nav>
- </header>
+      <div class="container">
+          <a href="#" class="header__logo">
+              <img src="img/truck_icon.png" alt="logotype" class="header__img">
+              <span class="header__text"><b>Спецтех</b>24</span>
+          </a>
+          <nav class="header__nav">
+              <ul>
+                  <li class="header__li"><a href="#">О компании</a></li>
+                  <li class="header__li"><a href="#">Каталог</a></li>
+                  <li class="header__li"><a href="#">Портфолио</a></li>
+                  <li class="header__li"><a href="#">Контакты</a></li>
+              </ul>
+          </nav>
+          <div class="header__btn"><a href="#" class="header__btn-call">Заказать звонок</a></div>
+      </div>
+
+  </header>
  <main>
   <div class="menu-contacts">
-    <h2 class="menu-contacts__title">Контакты</h2>
-    <p class="menu-contacts__text">Lorem ipsum dolor sit amet.</p>
-    <a href="" class="menu-contacts__btn-ineedconsult">Мне нужна консультация</a>
+    <div class="container">
+      <h2 class="menu-contacts__title">Контакты</h2>
+      <p class="menu-contacts__text">Lorem ipsum dolor sit amet.</p>
+      <a href="" class="menu-contacts__btn-ineedconsult">Мне нужна консультация</a>
+    </div>
   </div>
   <section class="contacts">
-    <div class="map"><img src="#" alt="#"></div>
-    <div class="contacts__items">
-      <p class="contacts__number">+7 812 212 85 06</p>
-      <p class="contacts__mail">rent@spezteh.ru</p>
-      <p class="contacts__text">Заказать консультацию</p>
-      <form action="#">Получить консультацию</form>
+    <div class="container">
+      <div class="contacts__map"><img src="img/contmap.png" alt="map" class="contacts__img"></div>
+      <div class="contacts__items">
+        <p class="contacts__number">+7 812 212 85 06</p>
+        <p class="contacts__mail">rent@spezteh.ru</p>
+        <p class="contacts__text">Заказать консультацию</p>
+        <form action="#">Получить консультацию</form>
+    </div>
+    </div>
     </section>
-  </div>
+
   <section class="contacts-reviews">
-    <h2>Отзывы</h2>
-    <ul>
-      <li>
-        <img src="#" alt="#">
-        <p>Lorem ipsum dolor sit amet.<span>Оля Молния</span></p>
-      </li>
-      <li>
-        <img src="#" alt="#">
-        <p>Lorem ipsum dolor sit amet.<span>Оля Молния</span></p>
-      </li>
-      <li>
-        <img src="#" alt="#">
-        <p>Lorem ipsum dolor sit amet.<span>Оля Молния</span></p>
-      </li>
-      <li>
-        <img src="#" alt="#">
-        <p>Lorem ipsum dolor sit amet.<span>Оля Молния</span></p>
-      </li>
-    </ul>
+    <div class="container">
+      <h2 class='contacts-reviews__title'>Отзывы</h2>
+      <ul>
+        <li>
+          <div class="contacts-reviews__ava">
+            <img src="img/girl.jpg" alt="#">
+          </div>
+          <p>Lorem ipsum dolor sit amet.<span>Оля Молния</span></p>
+        </li>
+        <li>
+          <div class="contacts-reviews__ava">
+            <img src="img/rev2.jpg" alt="#">
+          </div>
+          <p>Lorem ipsum dolor sit amet.<span>Оля Молния</span></p>
+        </li>
+        <li>
+          <div class="contacts-reviews__ava">
+            <img src="img/man.jpg" alt="#">
+          </div>
+          <p>Lorem ipsum dolor sit amet.<span>Оля Молния</span></p>
+        </li>
+        <li>
+          <div class="contacts-reviews__ava">
+            <img src="img/rev4.jpg" alt="#">
+          </div>
+          <p>Lorem ipsum dolor sit amet.<span>Оля Молния</span></p>
+        </li>
+      </ul>
+    </div>
   </section>
  </main>
 
