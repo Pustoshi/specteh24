@@ -253,7 +253,7 @@ font-weight: 400;
 
 
 .about{
-  padding-top: 40px;
+  padding-top: 50px;
   padding-bottom: 40px;
   position: relative;
   background-color: #202e3b;
@@ -293,6 +293,8 @@ background-size: 25px 14px;
   font-size: 18px;
   color: #9e9e9e;
   font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .about__number{
   font-weight: 700;
@@ -303,8 +305,13 @@ background-size: 25px 14px;
 }
 
 .reviews{
-  width: 60%;
+  width: 70%;
   float: left;
+}
+.reviews__item{
+  clear: both;
+  padding-bottom: 20px;
+  overflow: hidden;
 }
 .reviews__subtitle{
   font-size: 26px;
@@ -312,10 +319,33 @@ background-size: 25px 14px;
   color: #fff;
   margin-bottom: 30px;
 }
+.reviews__text{
+  color: #fff;
+  font-weight: normal;
+  font-size: 16px;
+  font-weight: normal;
+}
+.reviews__author{
+  color: #fff;
+  font-style: normal;
+  color: #ffcc33;
+  font-size: 16px;
+  margin-top: 20px;
+  padding-top: 30px;
+}
+.reviews__imgbox{
+  float: left;
+  border: 3px solid #f1b132;
+  border-radius: 4px;
+  width: 120px;
+  height: 120px;
+  margin-right: 5%;
+  overflow: hidden;
+}
 .reviews__img{
   float: left;
-  margin-right: 5%;
-  width: 10%;
+  height: 120%;
+
 }
 
 .reviews__text{
@@ -324,7 +354,13 @@ background-size: 25px 14px;
   font-style: italic;
 }
 
-
+.map{
+  background-image: url(../img/map.jpg);
+  height: 500px;
+  background-repeat: no-repeat;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+}
 
 .footer {
   background-color: #202e3b;
@@ -574,22 +610,37 @@ height: 100%;
   font-size: 18px;
   font-weight: 700;
   margin-bottom: 20px;
-  padding-left: 20px;
+  position: relative;
+  padding-left: 30px;
 }
 .contacts__number:before{
   content: "";
-  background-image: url(../img/Forma 1.png);
+  position: absolute;
+  background-image: url(../img/tel.png);
   background-size: 100%;
- height: 20px;
- display: inline-block;
- position: relative;
+  background-repeat: no-repeat;
+ height: 100%;
+ width: 20px;
+ left: 0;
 }
 .contacts__mail{
   font-size: 18px;
   font-weight: 700;
   margin-bottom: 28px;
+  position: relative;
+  padding-left: 30px;
 }
+.contacts__mail:before{
+  content: "";
+  position: absolute;
+  background-image: url(../img/mail.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+ height: 100%;
+ width: 20px;
+ left: 0;
 
+}
 .contacts__text{
   font-size: 16px;
   font-weight: 400;
@@ -687,11 +738,12 @@ height: 100%;
 }
 .rent-techic__left{
   float: left;
-  width: 70%;
+  width: 70px;
 }
 .rent-technic__subtitle{
   font-size: 26px;
   color: #ffcd34;
+  display: inline-block;
 }
 .rent-technic__text{
   font-size: 16px;
@@ -699,6 +751,7 @@ height: 100%;
 }
 .rent-techic__right{
   width: 30%;
+  float: right;
 }
 .rent-technic__order-text{
 color: #fff;
