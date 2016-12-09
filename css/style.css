@@ -22,25 +22,33 @@ background: rgba(246, 244, 147, 0.0);
 
 }
 .header:after{
-  content: '';
-  background: linear-gradient(#ffeeb0 30%, #a2d49f 30%,
-   #a2d49f 40%, #c7c12f 40%, #c7c12f 50%, #f26247 50%, #f26247 60%,
-   #ec2045 60%, #ec2045 70%, #ffeeb0 70% );
-   height: 20px;
-   width: 100%;
-
+  content: "";
+display: block;
+bottom: 0;
+left: 0;
+height: 14px;
+width: 100%;
+background-image: linear-gradient(135deg, #ffcd34 35%, #000 35%, #000 65%, #ffcd34 65%);
+background-size: 25px 14px;
 }
 .header__text, .header__img{
   vertical-align: middle;
 }
+.header__text{
+  font-size: 24px;
+}
 .header__logo{
+  padding-top: 22px;
+  padding-bottom: 22px;
   width: 180px;
   float: left;
 }
 .header__nav{
+  padding-top: 20px;
+  padding-bottom: 20px;
   width: 586px;
   float: left;
-  text-align: left;
+  text-align: right;
 }
 .header__li {
   display: inline-block;
@@ -53,11 +61,12 @@ background: rgba(246, 244, 147, 0.0);
   color: #000;
 }
 .header__btn{
-  height: 75px;
-  width: 174px;
+  margin-top: 30px;
   float: right;
 }
 .header__btn-call {
+  padding: 10px 20px 10px 20px;
+  background-color: #ffe184;
   text-align: center;
 }
 .promo{
@@ -66,6 +75,8 @@ background: rgba(246, 244, 147, 0.0);
   background-position: 50% 50%;
   height: 462px;
 }
+
+
 .promo__title {
     padding-top: 144px;
     margin-bottom: 10px;
@@ -107,6 +118,17 @@ background: rgba(246, 244, 147, 0.0);
 .consult{
   background-color: #202e3b;
 }
+
+.consult:before{
+  content: "";
+display: block;
+bottom: 0;
+left: 0;
+height: 14px;
+width: 100%;
+background-image: linear-gradient(135deg, #ffcd34 35%, #000 35%, #000 65%, #ffcd34 65%);
+background-size: 25px 14px;
+}
 .consult__title{
   margin-top: 40px;
 font-size: 24px;
@@ -131,6 +153,7 @@ font-weight: 400;
 .advantages{
   background-color: #fff;
 }
+
 
 .advantages__item {
   margin: 40px 0 40px 0;
@@ -160,6 +183,8 @@ font-weight: 400;
 .technic{
   background-color: #f3f3f3;
 }
+
+
 .technic__menu{
   width: 30%;
   float: left;
@@ -183,6 +208,26 @@ font-weight: 400;
 .about{
   background-color: #202e3b;
 }
+.about:before{
+  content: "";
+display: block;
+bottom: 0;
+left: 0;
+height: 14px;
+width: 100%;
+background-image: linear-gradient(135deg, #ffcd34 35%, #000 35%, #000 65%, #ffcd34 65%);
+background-size: 25px 14px;
+}
+.about:after{
+  content: "";
+display: block;
+bottom: 0;
+left: 0;
+height: 14px;
+width: 100%;
+background-image: linear-gradient(135deg, #ffcd34 35%, #000 35%, #000 65%, #ffcd34 65%);
+background-size: 25px 14px;
+}
 .about__numbers{
   width: 30%;
   float: left;
@@ -202,6 +247,71 @@ font-weight: 400;
   float: left;
   width: 75%;
 }
+.footer {
+  background-color: #202e3b;
+  overflow: hidden;
+}
+
+.footer__text, .footer__img{
+  vertical-align: middle;
+}
+.footer__text{
+  font-size: 24px;
+  color: #ffcd34;
+}
+.footer__logo{
+  padding-top: 22px;
+  padding-bottom: 22px;
+  width: 180px;
+  float: left;
+}
+.footer__nav{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 586px;
+  float: left;
+  text-align: right;
+}
+.footer__li {
+  display: inline-block;
+  padding: 10px;
+  text-align: left;
+}
+.footer a {
+  text-decoration: none;
+}
+.footer__li a{
+  color: #fff;
+}
+.footer__btn{
+  margin-top: 30px;
+  float: right;
+}
+.footer__btn-call {
+  padding: 10px 20px 10px 20px;
+  text-align: center;
+  color: #ffcd34;
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .portfolio-menu{
   background-image: url(../img/portfolio.jpg);
   height: 115px;
