@@ -7,6 +7,8 @@
   <title>Contacts</title>
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB1hCZ6_jsQPBBt9cq43BYO6H-bQMFZhpw&callback=initMap" async defer></script>
+  <script src="js/googlemap.js" type="text/javascript"></script>
 </head>
 <body>
   <header class="header">
@@ -37,7 +39,7 @@
   </div>
   <section class="contacts">
     <div class="container">
-      <div class="contacts__map"><img src="img/contmap.png" alt="map" class="contacts__img"></div>
+      <div id="contacts__map"><iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d1122.6309379648933!2d37.619738208109965!3d55.75395292167213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x46b54a5a738fa419%3A0x7c347d506b52311f!2z0JrRgNCw0YHQvdCw0Y8g0J_Qu9C-0YnQsNC00YwsINCa0YDQsNGB0L3QsNGPINC_0LsuLCDQnNC-0YHQutCy0LAsIDEwOTAxMg!3m2!1d55.7539303!2d37.620795!5e0!3m2!1sru!2sru!4v1481824664275" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe></div>
       <div class="contacts__items">
         <p class="contacts__number">+7 812 212 85 06</p>
         <p class="contacts__mail">rent@spezteh.ru</p>
@@ -46,7 +48,7 @@
         <form action="#" class="contacts__form">
           <input type="text" class="contacts__form-name"placeholder="Имя" />
   	      <input type="text" class="contacts__form-phone" placeholder="Телефон для связи" />
-  	      <input type="text" class="contacts__form-description" placeholder="Описание задачи (можно примерное)"/>
+  	      <textarea class="contacts__form-description" placeholder="Описание задачи (можно примерное)"></textarea>
   	      <button class="contacts__form-btn">Получить консультацию</button>
         </form>
     </div>

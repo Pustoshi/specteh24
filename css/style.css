@@ -242,6 +242,7 @@ font-weight: 400;
 .technic__table {
   margin-top: 28px;
   width: 100%;
+  border-collapse: collapse;
 }
 .technic__table-head{
   font-weight: 700;
@@ -338,8 +339,9 @@ background-size: 25px 14px;
   font-style: normal;
   color: #ffcc33;
   font-size: 16px;
-  margin-top: 20px;
-  padding-top: 30px;
+
+  padding-top: 10px;
+  display: inline-block;
 }
 .reviews__imgbox{
   float: left;
@@ -362,12 +364,10 @@ background-size: 25px 14px;
   font-style: italic;
 }
 
-.map{
-  background-image: url(../img/map.jpg);
+#map{
+
   height: 500px;
-  background-repeat: no-repeat;
-  -webkit-background-size: 100%;
-  background-size: 100%;
+
 }
 
 .footer {
@@ -599,7 +599,7 @@ background-color: #000;
   background-color: #ffcd34;
   padding: 10px 20px 10px 20px;
 }
-.contacts__map{
+#contacts__map{
   width: 620px;
   height: 398px;
   float: left;
@@ -683,7 +683,7 @@ height: 100%;
   margin-bottom: 10px;
   font-size: 14px;
   color: #b0b0b0;
-  padding-left: 10px;
+  padding: 10px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   position: relative;
